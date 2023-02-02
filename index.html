@@ -11,9 +11,9 @@
         1.
          <br>
 
-            a. I had taken html/css/js class in last semester, but the 'js' is really basic.
+            a. I had taken html/css/js class in last semester, the class name was 'core 1 : interaction', but the 'js' is really in basic level. becuase I learned only how to make buttons because of the strike. I even forgot this.
            <br>
-            b. 2022fall core 1 : interaction
+            b. I liked the part of using the figma, becuase I can make it an easier way by using figma.
            <br>
             c. JS, because I just heard about funtion about this lauguage, It seemed to me difficult.
 
@@ -157,5 +157,42 @@ font-family: 'Montserrat', sans-serif;
 20.<button onclick="myFunction()">Click me</button>
 
     </p>
+
+    <button id="btn">Press me</button>
+    <div id="text-container">
+      <p class="text">Text 1</p>
+      <p class="text">Text 2</p>
+      <p class="text">Text 3</p>
+      <p class="text">Text 4</p>
+      <p class="text">Text 5</p>
+    </div>
+    
+    <style>
+    .text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(0);
+      transition: transform 0.5s ease;
+    }
+    </style>
+    
+    <script>
+    const btn = document.querySelector('#btn');
+    const textContainer = document.querySelector('#text-container');
+    const texts = textContainer.querySelectorAll('.text');
+    
+    btn.addEventListener('click', function() {
+      let offset = 0;
+      texts.forEach(function(text) {
+        text.style.transform = `translateY(${offset}px)`;
+        offset += text.offsetHeight;
+      });
+    });
+    </script>
+    
+
+
+
 </body>
 </html>
