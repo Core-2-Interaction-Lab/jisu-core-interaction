@@ -1,0 +1,100 @@
+.name{
+
+/* JISU KANG */
+
+
+position: absolute;
+width: 248px;
+height: 29px;
+left: 836px;
+top: 35px;
+
+font-family: 'IM FELL Great Primer';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+
+
+
+}
+
+
+
+
+.title{
+/* The Library of Babel */
+
+
+position: absolute;
+width: 618px;
+height: 471px;
+left: 75px;
+top: 102px;
+
+/* asdf */
+
+font-family: 'IM FELL Great Primer';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 156px;
+
+color: #000000;
+
+}
+
+.writer{
+    position: absolute;
+    width: 400px;
+    height: 39px;
+    left: 13px;
+    top: 590px;
+    
+    font-family: 'IM FELL Great Primer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    
+    color: #000000;
+
+}
+
+.content{
+
+
+    position: absolute;
+width: 437px;
+height: 585px;
+
+font-family: 'IM FELL Great Primer';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+
+color: #000000;
+}
+
+
+.classname{
+    /* Core 2 Interaction, Spring 2023 */
+
+    position: absolute;
+    width: 374px;
+    height: 24px;
+    
+    font-family: 'IM FELL Great Primer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #000000;
+}
