@@ -1,13 +1,60 @@
-.name{
+body{
+    position : ;
+    font-family: 'IM Fell Great Primer', serif;
+    padding-left : 60px;
+}
 
+.updown0 {
+    position:absolute;
+    border: 5px solid black;
+    width: 0.1px;
+    margin-top: 130px;
+    margin-left: 1200px;
+    height: 500px;
+}
+
+.updown {
+    position:absolute;
+    border: 5px solid black;
+    width: 0.1px;
+    margin-top: 130px;
+    margin-left: 1000px;
+    height: 500px;
+}
+
+.updown2 {
+    position:absolute;
+    border: 5px solid black;
+    width: 0.1px;
+    margin-top: 130px;
+    margin-left: 900px;
+    height: 500px;
+}
+
+.updown3 {
+    position:absolute;
+    border: 5px solid black;
+    width: 0.1px;
+    margin-top: 130px;
+    margin-left: 850px;
+    height: 500px;
+}
+
+.updown4 {
+    position:absolute;
+    border: 5px solid black;
+    width: 0.1px;
+    margin-top: 130px;
+    margin-left: 820px;
+    height: 500px;
+}
+
+.name{
 /* JISU KANG */
 
-
-position: absolute;
-width: 248px;
-height: 29px;
-left: 836px;
-top: 35px;
+position: relative;
+padding-top :30px;
+margin-bottom : -50px;
 
 font-family: 'IM FELL Great Primer';
 font-style: normal;
@@ -17,23 +64,18 @@ line-height: 29px;
 text-align: center;
 
 color: #000000;
-
-
-
 }
-
-
-
 
 .title{
 /* The Library of Babel */
 
-
-position: absolute;
-width: 618px;
-height: 471px;
-left: 75px;
-top: 102px;
+position: relative;
+width: px;
+height: px;
+left: px;
+top: px;
+padding-bottom: ;
+margin-bottom: -30px;
 
 /* asdf */
 
@@ -41,60 +83,58 @@ font-family: 'IM FELL Great Primer';
 font-style: normal;
 font-weight: 400;
 font-size: 128px;
-line-height: 156px;
+line-height: px;
 
 color: #000000;
-
 }
 
 .writer{
-    position: absolute;
-    width: 400px;
-    height: 39px;
-    left: 13px;
-    top: 590px;
+    position: relative;
+    width: px;
+    height: px;
+    left: px;
+    top: px;
     
     font-family: 'IM FELL Great Primer';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
-    text-align: center;
+    text-align: ;
     
     color: #000000;
-
 }
 
 .content{
+    position: relative;
+    width: 300px;
+    height: px;
+    hyphens: auto;
+    padding-left : 1000px;
+    padding-right : px;
+    font-family: 'IM FELL Great Primer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: px;
+    text-align: ;
 
 
-    position: absolute;
-width: 437px;
-height: 585px;
-
-font-family: 'IM FELL Great Primer';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 39px;
-
-color: #000000;
+    color: #000000;
 }
-
 
 .classname{
     /* Core 2 Interaction, Spring 2023 */
 
-    position: absolute;
-    width: 374px;
-    height: 24px;
+    position: relative;
+    text-align: center;
     
     font-family: 'IM FELL Great Primer';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
+    text-align: ;
     
     color: #000000;
 }
