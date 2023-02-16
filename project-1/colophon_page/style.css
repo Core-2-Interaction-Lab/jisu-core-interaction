@@ -144,7 +144,7 @@ color: #000000;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 720px) {
     .content{
         position: relative;
         width: 300px;
