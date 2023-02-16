@@ -1,7 +1,7 @@
 <html>
     
 <head>
-    <title>1 floor</title>
+    <title>2 floor</title>
     <script>
         function hideMarquee() {
             document.querySelector('.marquee').style.display = 'none';
@@ -11,12 +11,14 @@
     <body>
         <div class="container">
             <div class="marquee" >
-                <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50" onclick="hideMarquee()">
+                <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50" scrollamount="12" onmouseover="this.stop();" onmouseout="this.start();" onclick="hideMarquee()"  onclick="showOne('whathere')">
                     By this art you may contemplate the variations of the 23 letters...<br>
                     The Anatomy of Melancholy, part 2, sect. II, mem. IV
                 </MARQUEE>
 
-                <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50"  scrollamount="2">
+    
+
+                <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50"  scrollamount="9" delayBeforeStart="100" >
                   
                     The universe (which others call the Library) is composed of an indefinite and perhaps infinite number of hexagonal<br>
                     galleries, with vast air shafts between, surrounded by very low railings. From any of the hexagons one can see, <br>
@@ -40,6 +42,9 @@
         </div>
                            
         <div class="black"></div>
+
+
+        <a href="../3/page3.html"> GO TO THE !@#$%~? FLOOR</a>
 
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
