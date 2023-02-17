@@ -109,6 +109,25 @@ color: #000000;
     color: #000000;
 }
 
+section {
+    display : flex;
+
+    flex-direction: column;
+    align-items: end;  
+    
+}
+
+
+ddd {
+    background-color: rgb(87, 87, 87);
+    padding : 0px;
+    height : 120px;
+}
+
+dddd {
+    position : absolute;
+}
+
 .content{
     position: relative;
     width: 300px;
@@ -160,7 +179,7 @@ color: #000000;
         line-height: px;
         text-align: ;
     
-    
+
         color: #000000;
     }
 
