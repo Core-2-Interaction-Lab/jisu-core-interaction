@@ -1,0 +1,15 @@
+body{
+    font-family: 'Inconsolata', monospace;
+
+}
+
+a {    text-decoration-line: none;
+
+}
+
+div {
+    margin: 10px;
+    border: 40px solid #000000;
+    padding: 30px;
+    position: relative;
+  }

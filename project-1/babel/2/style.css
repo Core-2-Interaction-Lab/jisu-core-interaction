@@ -1,6 +1,8 @@
 body{
     font-family: 'Inconsolata', monospace;
+    text-decoration-line: none;
 }
+
 
 .box { 
     color: red;
@@ -11,14 +13,14 @@ body{
 }
 
 .black {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 1050px;
+    right: 0;
     width: 500px;
     height: 100%;
     background-color: black;
     z-index: -1;
-}
+  }
 
 .scroll-container {
     overflow: hidden;
@@ -26,4 +28,36 @@ body{
     position: relative;
   }
 
-  
+  footer {
+    position : absolute;
+    left : 15px;
+    top : 15px;
+}
+
+
+
+a {
+    text-decoration-line: none;
+    width:200px;
+
+    background-color: #000000;
+
+    border: none;
+
+    color:#fff;
+
+    padding: 15px 0;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 15px;
+
+    margin: 4px;
+
+    cursor: pointer;
+
+}
