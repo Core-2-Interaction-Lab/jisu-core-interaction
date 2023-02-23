@@ -1,13 +1,18 @@
 body{
     font-family: 'Inconsolata', monospace;
+    background-color: black;
+    color : white;
 
 }
 
 a {    text-decoration-line: none;
+    color : white;
+
 }
 
 div {
     margin: 10px;
-    border: 40px solid #000000;
+    border: 40px solid #ffffff;
     padding: 30px;
+    position: relative;
   }

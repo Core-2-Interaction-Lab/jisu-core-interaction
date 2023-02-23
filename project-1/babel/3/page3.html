@@ -1,6 +1,7 @@
 <html>
     
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>3 floor</title>
     <script>
         function hideMarquee() {
@@ -11,17 +12,8 @@
     <body>
         <div class="container">
             <div class="marquee" >
-                <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50" scrollamount="12" onmouseover="this.stop();" onmouseout="this.start();" onclick="hideMarquee()"  onclick="showOne('whathere')">
-                    
-First: The Library exists ab aeterno. This truth, whose immediate corollary is the future eternity of the world, cannot be placed in doubt by any reasonable mind. Man, the imperfect librarian, may be the product of chance or of malevolent demiurgi; the universe, with its elegant endowment of shelves, of enigmatical volumes, of inexhaustible stairways for the traveler and latrines for the seated librarian, can only be the work of a god. To perceive the distance between the divine and the human, it is enough to compare these crude wavering symbols which my fallible hand scrawls on the cover of a book, with the organic letters inside: punctual, delicate, perfectly black, inimitably symmetrical.
-                </MARQUEE>
-
-    
-
-                <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50"  scrollamount="9" delayBeforeStart="100" >
-                    Second: The orthographical symbols are twenty-five in number.^ This finding made it possible, three hundred years ago, to formulate a general theory of the Library and solve satisfactorily the problem which no conjecture had deciphered: the formless and chaotic nature of almost all the books. One which my father saw in a hexagon on circuit fifteen ninety-four was made up of the letters MCV, perversely repeated from the first line to the last. Another (very much consulted in this area) is a mere labyrinth of letters, but the next-to-last page says Oh time thy pyramids. This much is already known: for every sensible line of straightforward statement, there are leagues of senseless cacophonies, verbal jumbles and incoherences. (I know of an uncouth region whose librarians repudiate the vain and superstitious custom of finding a meaning in books and equate it with that of finding a meaning in dreams or in the chaotic lines of one's palm... They admit that the inventors of this writing imitated the twenty-five natural symbols, but maintain that this application is accidental and that the books signify nothing in themselves. This dictum, we shall see, is not entirely fallacious.)
-                </MARQUEE>
-                <MARQUEE behavior="scroll" direction="right" hspace="1250" vspace="0"  scrollamount="2">
+               
+                <MARQUEE behavior="scroll" direction="right" hspace="650" vspace="20"  scrollamount="16" width="900" height="50">
                     <Div class="box">
                         dsfgf!@#$f24523434sdDFSGFDSHGHGHSADSaaaaaasfaaaadda000000002121ffffff
                     </div>
@@ -30,11 +22,94 @@ First: The Library exists ab aeterno. This truth, whose immediate corollary is t
         </div>
                            
         <div class="black"></div>
-<footer>
-        <a href="../4/page4.html"> GO TO THE !@#$%~? FLOOR</a>
-        <a href="../main.html"> X </a>
-</footer>
 
+
+
+
+
+        <!-- 버튼 -->
+<div class="btnWrap">
+    <p>
+        <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="20" scrollamount="19" >
+        
+First: The Library exists ab aeterno. This truth, whose immediate corollary is the future eternity of the world, cannot be placed in doubt by any reasonable mind. Man, the imperfect librarian, may be the product of chance or of malevolent demiurgi; the universe, with its elegant endowment of shelves, of enigmatical volumes, of inexhaustible stairways for the traveler and latrines for the seated librarian, can only be the work of a god. To perceive the distance between the divine and the human, it is enough to compare these crude wavering symbols which my fallible hand scrawls on the cover of a book, with the organic letters inside: punctual, delicate, perfectly black, inimitably symmetrical.
+        </MARQUEE>
+    </p>
+
+    <p>
+        <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50" scrollamount="12">
+            Second: The orthographical symbols are twenty-five in number.^ This finding made it possible, three hundred years ago, to formulate a general theory of the Library and solve satisfactorily the problem which no conjecture had deciphered: the formless and chaotic nature of almost all the books. One which my father saw in a hexagon on circuit fifteen ninety-four was made up of the letters MCV, perversely repeated from the first line to the last. Another (very much consulted in this area) is a mere labyrinth of letters, but the next-to-last page says Oh time thy pyramids. This much is already known: for every sensible line of straightforward statement, there are leagues of senseless cacophonies, verbal jumbles and incoherences. (I know of an uncouth region whose librarians repudiate the vain and superstitious custom of finding a meaning in books and equate it with that of finding a meaning in dreams or in the chaotic lines of one's palm... They admit that the inventors of this writing imitated the twenty-five natural symbols, but maintain that this application is accidental and that the books signify nothing in themselves. This dictum, we shall see, is not entirely fallacious.)
+        </MARQUEE>
+    </p>
+
+    <p>
+        <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50" scrollamount="3">
+            Second: The orthographical symbols are twenty-five in number.^ This finding made it possible, three hundred years ago, to formulate a general theory of the Library and solve satisfactorily the problem which no conjecture had deciphered: the formless and chaotic nature of almost all the books. One which my father saw in a hexagon on circuit fifteen ninety-four was made up of the letters MCV, perversely repeated from the first line to the last. Another (very much consulted in this area) is a mere labyrinth of letters, but the next-to-last page says Oh time thy pyramids. This much is already known: for every sensible line of straightforward statement, there are leagues of senseless cacophonies, verbal jumbles and incoherences. (I know of an uncouth region whose librarians repudiate the vain and superstitious custom of finding a meaning in books and equate it with that of finding a meaning in dreams or in the chaotic lines of one's palm... They admit that the inventors of this writing imitated the twenty-five natural symbols, but maintain that this application is accidental and that the books signify nothing in themselves. This dictum, we shall see, is not entirely fallacious.)
+        </MARQUEE>
+    </p>
+</div>
+
+    <!-- 박스 추가되는 영역 -->
+<div id="boxWrap" style="float : left;">
+      <p class="original">
+      </p>
+</div>
+
+    <style>
+#boxWrap {
+  width: auto;
+  height: auto;
+}
+
+#boxWrap : after {
+  content: "";
+  display: block;
+ right : 0;
+  clear: both;
+}
+
+#boxWrap p+p{margin-left:5px;}
+
+#boxWrap .original {
+    position : absolute;
+    top: 100px;
+    left : 800px;
+  width: 400px;
+  height: 100px;
+  background-color: #ffffff00;
+  text-align: ;
+  line-height: auto;
+  color : rgba(255, 255, 255, 0.521);
+
+}
+
+.btnWrap{width:100%;}
+    </style>
+<script>
+$(document).ready(function() {
+	var i=1; // 변수설정은 함수의 바깥에 설정!
+  $("p").click(function() {
+    $(this).remove();
+    $("#boxWrap").append("<p class='original'>First: The Library exists ab aeterno. This truth, whose immediate corollary is the future eternity of the world, cannot be placed in doubt by any reasonable mind. Man, the imperfect librarian, may be the product of chance or of malevolent demiurgi; the universe, with its elegant endowment of shelves, of enigmatical volumes, of inexhaustible stairways for the traveler and latrines for the seated librarian, can only be the work of a god. To perceive the distance between the divine and the human, it is enough to compare these crude wavering symbols which my fallible hand scrawls on the cover of a book, with the organic letters inside: punctual, delicate, perfectly black, inimitably symmetrical.Second: The orthographical symbols are twenty-five in number.^ This finding made it possible, three hundred years ago, to formulate a general theory of the Library and solve satisfactorily the problem which no conjecture had deciphered: the formless and chaotic nature of almost all the books. One which my father saw in a hexagon on circuit fifteen ninety-four was made up of the letters MCV, perversely repeated from the first line to the last. Another (very much consulted in this area) is a mere labyrinth of letters, but the next-to-last page says Oh time thy pyramids. This much is already known: for every sensible line of straightforward statement, there are leagues of senseless cacophonies, verbal jumbles and incoherences. (I know of an uncouth region whose librarians repudiate the vain and superstitious custom of finding a meaning in books and equate it with that of finding a meaning in dreams or in the chaotic lines of one's palm... They admit that the inventors of this writing imitated the twenty-five natural symbols, but maintain that this application is accidental and that the books signify nothing in themselves. This dictum, we shall see, is not entirely fallacious.)"+i+"</p>");
+    
+    i++; // 함수 내 하단에 증가문 설정
+    
+
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+<footer>
+   <a href="../4/page4.html"> GO TO THE !@#$%~? FLOOR</a>
+   <a href="../main.html"> X </a>
+</footer>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -1,6 +1,23 @@
+html{height: 100%;}
+
 body{
+    position: relative;
+    width: 100%;
+    height: 100%;
     font-family: 'Inconsolata', monospace;
+    color : white;
+    background-color: #000000;
+
 }
+
+p{
+position: absolute;
+padding-top : 10px;
+font-size: 300px;
+}
+
+
+
 
 .box { 
     color: red;
@@ -13,7 +30,7 @@ body{
 .black {
     position: absolute;
     top: 0;
-    left: 450px;
+    left: 0px;
     width: 1850px;
     height: 100%;
     background-color: black;
@@ -30,3 +47,36 @@ body{
   }
 
   
+  footer {
+    position : absolute;
+    left : 15px;
+    up : 15px;
+}
+
+
+
+a {
+    text-decoration-line: none;
+    width:200px;
+
+    background-color: #000000;
+
+    border: none;
+
+    color:#fff;
+
+    padding: 15px 0;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 15px;
+
+    margin: 4px;
+
+    cursor: pointer;
+
+}

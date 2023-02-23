@@ -1,6 +1,8 @@
 body{
     font-family: 'Inconsolata', monospace;
+    text-decoration-line: none;
 }
+
 
 .box { 
     color: red;
@@ -11,29 +13,25 @@ body{
 }
 
 .black {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 450px;
-    width: 1850px;
+    right: 0;
+    width: 1200px;
     height: 100%;
     background-color: black;
     z-index: -1;
-}
+  }
 
-
-
-    
 .scroll-container {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
   }
 
-  
   footer {
     position : absolute;
     left : 15px;
-    bottom : 15px;
+    top : 15px;
 }
 
 

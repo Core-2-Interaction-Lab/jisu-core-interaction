@@ -1,6 +1,7 @@
 <html>
     
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>5 floor</title>
     <script>
         function hideMarquee() {
@@ -11,23 +12,7 @@
     <body>
         <div class="container">
             <div class="marquee" >
-                <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50" scrollamount="12" onmouseover="this.stop();" onmouseout="this.start();" onclick="hideMarquee()"  onclick="showOne('whathere')">
-
                
-
-                    At that time it was also hoped that a clarification of humanity's basic mysteries - the origin of the Library and of time - might be found. It is verisimilar that these grave mysteries could be explained in words: if the language of philosophers is not sufficient, the multiform Library will have produced the unprecedented language required, with its vocabularies and grammars. For four centuries now men have exhausted the hexagons... There are official searchers, inquisitors. I have seen them in the performance of their function: they always arrive extremely tired from their journeys; they speak of a broken stairway which almost killed them; they talk with the librarian of galleries and stairs; sometimes they pick up the nearest volume and leaf through it, looking for infamous words. Obviously, no one expects to discover anything.
-                </MARQUEE>
-
-    
-
-                <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50"  scrollamount="9" delayBeforeStart="100" >
-                
-
-
-
-                   
-As was natural, this inordinate hope was followed by an excessive depression. The certitude that some shelf in some hexagon held precious books and that these precious books were inaccessible, seemed almost intolerable. A blasphemous sect suggested that the searches should cease and that all men should juggle letters and symbols until they constructed, by an improbable gift of chance, these canonical books. The authorities were obliged to issue severe orders. The sect disappeared, but in my childhood I have seen old men who, for long periods of time, would hide in the latrines with some metal disks in a forbidden dice cup and feebly mimic the divine disorde Others, inversely, believed that it was fundamental to eliminate useless works. They invaded the hexagons, showed credentials which were not always false, leafed through a volume with displeasure and condemned whole shelves: their hygienic, ascetic furor caused the senseless perdition of millions of books. Their name is execrated, but those who deplore the "treasures" destroyed by this frenzy neglect two notable facts. One: the Library is so enormous that any reduction of human origin is infinitesimal. The other: every copy is unique, irreplaceable, but (since the Library is total) there are always several hundred thousand imperfect facsimiles: works which differ only in a letter or a comma. Counter to general opinion, I venture to suppose that the consequences of the Purifiers' depredations have been exaggerated by the horror these fanatics produced. They were urged on by the delirium of trying to reach the books in the Crimson Hexagon: books whose format is smaller than usual, all-powerful, illustrated and magical. 
-                </MARQUEE>
                 <MARQUEE behavior="scroll" direction="right" hspace="1250" vspace="0"  scrollamount="2" width="900" height="50">
                     <Div class="box">
                         dsfgf!@#$f24523434sdDFSGFDSHGHGHSADSaaaaaasfaaaadda000000002121ffffff
@@ -37,10 +22,90 @@ As was natural, this inordinate hope was followed by an excessive depression. Th
         </div>
                            
         <div class="black"></div>
-<footer>
-        <a href="../6/page6.html"> GO TO THE !@#$%~? FLOOR</a>
-        <a href="../main.html"> X </a>
 
+
+
+
+
+        <!-- 버튼 -->
+<div class="btnWrap">
+    <p>
+        <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="500" scrollamount="4" >
+    
+            At that time it was also hoped that a clarification of humanity's basic mysteries - the origin of the Library and of time - might be found. It is verisimilar that these grave mysteries could be explained in words: if the language of philosophers is not sufficient, the multiform Library will have produced the unprecedented language required, with its vocabularies and grammars. For four centuries now men have exhausted the hexagons... There are official searchers, inquisitors. I have seen them in the performance of their function: they always arrive extremely tired from their journeys; they speak of a broken stairway which almost killed them; they talk with the librarian of galleries and stairs; sometimes they pick up the nearest volume and leaf through it, looking for infamous words. Obviously, no one expects to discover anything. 
+            As was natural, this inordinate hope was followed by an excessive depression. The certitude that some shelf in some hexagon held precious books and that these precious books were inaccessible, seemed almost intolerable. A blasphemous sect suggested that the searches should cease and that all men should juggle letters and symbols until they constructed, by an improbable gift of chance, these canonical books. The authorities were obliged to issue severe orders. The sect disappeared, but in my childhood I have seen old men who, for long periods of time, would hide in the latrines with some metal disks in a forbidden dice cup and feebly mimic the divine disorde
+        </MARQUEE>
+    </p>
+
+    <p>
+        <MARQUEE behavior="scroll" direction="right" hspace="0" vspace="50" scrollamount="12">
+            Others, inversely, believed that it was fundamental to eliminate useless works. They invaded the hexagons, showed credentials which were not always false, leafed through a volume with displeasure and condemned whole shelves: their hygienic, ascetic furor caused the senseless perdition of millions of books. Their name is execrated, but those who deplore the "treasures" destroyed by this frenzy neglect two notable facts. One: the Library is so enormous that any reduction of human origin is infinitesimal. The other: every copy is unique, irreplaceable, but (since the Library is total) there are always several hundred thousand imperfect facsimiles: works which differ only in a letter or a comma. Counter to general opinion, I venture to suppose that the consequences of the Purifiers' depredations have been exaggerated by the horror these fanatics produced. They were urged on by the delirium of trying to reach the books in the Crimson Hexagon: books whose format is smaller than usual, all-powerful, illustrated and magical. 
+        </MARQUEE>
+    </p>
+
+
+</div>
+
+    <!-- 박스 추가되는 영역 -->
+<div id="boxWrap" style="float : left;">
+      <p class="original">
+      </p>
+</div>
+
+    <style>
+#boxWrap {
+  width: auto;
+  height: auto;
+}
+
+#boxWrap : after {
+  content: "";
+  display: block;
+ right : 0;
+  clear: both;
+}
+
+#boxWrap p+p{margin-left:5px;}
+
+#boxWrap .original {
+    position : absolute;
+    top: 100px;
+    left : 800px;
+  width: 400px;
+  height: 100px;
+  background-color: #ffffff00;
+  text-align: ;
+  line-height: auto;
+  color : white;
+
+}
+
+.btnWrap{width:100%;}
+    </style>
+<script>
+$(document).ready(function() {
+	var i=1; // 변수설정은 함수의 바깥에 설정!
+  $("p").click(function() {
+    $(this).remove();
+    $("#boxWrap").append("<p class='original'>At that time it was also hoped that a clarification of humanity's basic mysteries - the origin of the Library and of time - might be found. It is verisimilar that these grave mysteries could be explained in words: if the language of philosophers is not sufficient, the multiform Library will have produced the unprecedented language required, with its vocabularies and grammars. For four centuries now men have exhausted the hexagons... There are official searchers, inquisitors. I have seen them in the performance of their function: they always arrive extremely tired from their journeys; they speak of a broken stairway which almost killed them; they talk with the librarian of galleries and stairs; sometimes they pick up the nearest volume and leaf through it, looking for infamous words. Obviously, no one expects to discover anything. As was natural, this inordinate hope was followed by an excessive depression. The certitude that some shelf in some hexagon held precious books and that these precious books were inaccessible, seemed almost intolerable. A blasphemous sect suggested that the searches should cease and that all men should juggle letters and symbols until they constructed, by an improbable gift of chance, these canonical books. The authorities were obliged to issue severe orders. The sect disappeared, but in my childhood I have seen old men who, for long periods of time, would hide in the latrines with some metal disks in a forbidden dice cup and feebly mimic the divine disorde Others, inversely, believed that it was fundamental to eliminate useless works. They invaded the hexagons, showed credentials which were not always false, leafed through a volume with displeasure and condemned whole shelves: their hygienic, ascetic furor caused the senseless perdition of millions of books. Their name is execrated, but those who deplore the "treasures" destroyed by this frenzy neglect two notable facts. One: the Library is so enormous that any reduction of human origin is infinitesimal. The other: every copy is unique, irreplaceable, but (since the Library is total) there are always several hundred thousand imperfect facsimiles: works which differ only in a letter or a comma. Counter to general opinion, I venture to suppose that the consequences of the Purifiers' depredations have been exaggerated by the horror these fanatics produced. They were urged on by the delirium of trying to reach the books in the Crimson Hexagon: books whose format is smaller than usual, all-powerful, illustrated and magical. "+i+"</p>");
+    
+    i++; // 함수 내 하단에 증가문 설정
+    
+
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+<footer>
+   <a href="../6/page6.html"> GO TO THE !@#$%~? FLOOR</a>
+   <a href="../main.html"> X </a>
 </footer>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
