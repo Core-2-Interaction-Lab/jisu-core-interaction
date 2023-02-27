@@ -61,3 +61,7 @@ a {
     cursor: pointer;
 
 }
+
+@media (max-width: 800px) {
+	.black {width:50%}
+}

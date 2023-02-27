@@ -3,14 +3,17 @@ body{
     text-decoration-line: none;
 }
 
-
-.box { 
+.container
+{
+    position : fixed;
+    padding-top: 330px;
     color: red;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
 }
+
 
 .black {
     position: fixed;
@@ -29,7 +32,7 @@ body{
   }
 
   footer {
-    position : absolute;
+    position : fixed;
     left : 15px;
     top : 15px;
 }
@@ -63,3 +66,6 @@ a {
 }
 
 
+@media (max-width: 800px) {
+	.black {width:50%}
+}
