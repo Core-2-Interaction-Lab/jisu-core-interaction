@@ -68,4 +68,8 @@ a {
 
 @media (max-width: 800px) {
 	.black {width:50%}
+
+    #boxWrap .original 
+
+{width:40%}
 }

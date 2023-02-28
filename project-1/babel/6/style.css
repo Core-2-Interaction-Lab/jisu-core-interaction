@@ -4,16 +4,13 @@ body{
 }
 
 .container{
-
-    
-}
-.box { 
     color: red;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
 }
+
 
 .black {
     position: fixed;
@@ -65,6 +62,9 @@ a {
 
 }
 
-@media (min-width: 500px) {
+@media (max-width: 900px) {
 	.black {width:50%}
+    #boxWrap .original 
+
+    {width:40%}
 }

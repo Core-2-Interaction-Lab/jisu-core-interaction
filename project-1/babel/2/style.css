@@ -3,14 +3,16 @@ body{
     text-decoration-line: none;
 }
 
-
-.box { 
+.container{
+    position : fixed;
     color: red;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
+    padding-top: 20px;
 }
+
 
 .black {
     position: fixed;
@@ -64,4 +66,7 @@ a {
 
 @media (max-width: 800px) {
 	.black {width:50%}
+    #boxWrap .original 
+
+    {width:40%}
 }

@@ -4,12 +4,14 @@ body{
 }
 
 
-.box { 
-    color: red;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+.container{
+
+  padding-top: 100px;
+  color: red;
+position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .black {
@@ -61,10 +63,7 @@ a {
     cursor: pointer;
 
 }
-.container {
-    position: relative;
-    overflow: hidden;
-  }
+
   
   .black {
     position: fixed;
@@ -76,29 +75,13 @@ a {
     z-index: -1;
   }
   
-  .marquee {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    white-space: nowrap;
-    animation: marquee-right 30s linear infinite;
-  }
+
   
-  .marquee > .box {
-    color: red;
-    display: inline-block;
-  }
-  
-  @keyframes marquee-right {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+
   
   @media (max-width: 800px) {
     .black {width:50%}
+    #boxWrap .original 
+
+    {width:40%}
   }

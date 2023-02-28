@@ -4,7 +4,7 @@ body{
 }
 
 
-.box { 
+.container { 
     color: red;
     position: absolute;
     top: 0;
@@ -62,6 +62,9 @@ a {
 
 }
 
-@media (min-width: 500px) {
+@media (max-width: 750px) {
 	.black {width:50%}
+    #boxWrap .original 
+
+    {width:40%}
 }
