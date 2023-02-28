@@ -10,10 +10,17 @@ body{
 
 }
 
+.container{
+
+text-align: justify; 
+}
+
+
 p{
-position: ;
-padding-top : 50px;
-font-size: 100px;
+position: absolute;
+
+width: 50%;
+font-size: 300px;
 }
 
 
