@@ -1,0 +1,200 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+	margin: 0;
+}
+
+.canvas {
+	z-index: -1;
+	max-width: 900px;
+	height: 550px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+}
+
+.egg{
+	z-index: 1;
+
+position: absolute;
+width: 324px;
+height: 211px;
+left: 70px;
+top: 243px;
+border-radius:50%;
+
+background: radial-gradient(50.76% 40.76% at 62.04% 50.24%, rgb(254, 255, 210) 18.75%, #000000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.light-long{
+	z-index: 1;
+	position: absolute;
+width: 131px;
+height: 407px;
+left: 271px;
+top: 100px;
+
+background: linear-gradient(180deg, #FFFFFF 12.5%, #FFD977 29.17%, #F8E4B2 39.58%, #323232 100%);
+}
+
+.light-top{
+	z-index: 3;
+position: absolute;
+width: 395px;
+height: 201px;
+left: 144px;
+top: 11px;
+
+background: linear-gradient(180deg, #0D0D0D 0%, rgb(43, 43, 43) 35.94%, rgb(194, 155, 101) 66.67%, #5F3F10 100%);
+border-radius: 125.5px;
+}
+
+.tape-left{
+	position: absolute;
+
+;width: 309px;
+	height: 309px;
+	left: 557px;
+	top: 194px;
+	border-radius:50%;
+
+	background: linear-gradient(180.11deg, #0950A4 26.42%, #09203C 51.35%, rgb(0, 0, 0) 99.9%);
+}
+
+.tape-right{
+	position: absolute;
+width: 309px;
+height: 309px;
+left: 620px;
+top: 224px;
+border-radius:50%;
+
+background: #000000;
+}
+
+.tape-white{
+
+		position: absolute;
+	width: 220px;
+	height: 220px;
+	left: 667px;
+	top: 266px;
+	border-radius:50%;
+	
+	background: linear-gradient(168.41deg, #FFFFFF 8.51%, rgba(255, 205, 130, 0) 118.27%);
+}
+
+.tape{
+	position: absolute;
+	z-index: 3;
+}
+
+.yellow-light{
+	z-index: -1;
+	position: absolute;
+width: 755px;
+height: 336px;
+left: -39px;
+top: 333px;
+border-radius:50%;
+
+background: radial-gradient(68.51% 50% at 50% 50%, #FFDA7B 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.top-yellow-light{
+	z-index: 1;
+	position: absolute;
+width: 377px;
+height: 234px;
+left: 151px;
+top: 28px;
+border-radius: 0%;
+
+background: radial-gradient(68.51% 50% at 50% 50%, #fffde1 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+.frag{
+	position: absolute;
+width: 128px;
+height: 180px;
+left: 505px;
+top: 189px;
+
+background: #5d4a4ab6;
+filter: blur(2px);
+border-radius: 33px;
+}
+.frag-top{
+	z-index: 10;
+position: absolute;
+width: 43px;
+height: 57px;
+left: 546px;
+top: 122px;
+border-radius: 50%;
+filter: blur(2px);
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.69),rgba(38, 32, 32, 0.2));
+}
+.dark{
+	z-index: 0;
+	position: absolute;
+width: 2367px;
+height: 1411px;
+left: -665px;
+top: -261px;
+
+background: radial-gradient(68.51% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #43413C 100%);
+
+}
+
+.egg-shadow{
+	z-index: 0;
+	position: absolute;
+width: 433px;
+height: 306px;
+left: -59px;
+top: 165px;
+border-radius: 50%;
+
+background: radial-gradient(90.51% 50% at 90% 90%, #312300 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.tape-shadow{
+	z-index: -1;
+	position: absolute;
+	width: 128.35px;
+	height: 271px;
+	left: 552.61px;
+	top: 466.26px;
+	
+	background: linear-gradient(180deg, #28251f 0%, rgba(217, 217, 217, 0) 100%);
+	transform: rotate(31.54deg);
+}
+
+.backdark{
+	z-index: -4;
+	position: absolute;
+width: 1992px;
+height: 180px;
+left: -210px;
+top: 122px;
+
+background: linear-gradient(180deg, rgba(60, 51, 51, 0) 0%, #3c333382 100%);
+filter: blur(2px);
+}
+
+.tape-empty{
+	z-index: 10;
+	position: absolute;
+width: 159px;
+height: 193px;
+left: 670.78px;
+top: 268.55px;
+border-radius: 50%;
+background: #e3dbdb;
+transform: rotate(29.01deg);
+}
