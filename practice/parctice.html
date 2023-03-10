@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Colors</title>
+  </head>
+  <body>
+    <ul id="color-list"></ul>
+    
+    <script>
+      var colors = [
+        {
+          color: "red",
+          value: "#FF0000"
+        },
+        {
+          color: "blue",
+          value: "#0000FF"
+        }
+      ];
+      
+      // 색상 목록을 출력하는 함수
+      function renderColorList(colors) {
+        var colorList = document.getElementById("color-list");
+        
+        // 각 색상 객체를 반복문을 사용하여 출력
+        for (var i = 0; i < colors.length; i++) {
+          var colorItem = document.createElement("li");
+          colorItem.style.backgroundColor = colors[i].value;
+          colorItem.innerHTML = colors[i].color;
+          
+          colorList.appendChild(colorItem);
+        }
+      }
+      
+      // 색상 목록을 화면에 출력
+      renderColorList(colors);
+    </script>
+  </body>
+</html>
