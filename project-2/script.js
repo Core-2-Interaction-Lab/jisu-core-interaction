@@ -1,12 +1,12 @@
 const collection = [
 
     {
-        'title' : 'Walking Tour of Korean Modern History 1',
-        'url' : 'http://www.yes24.com/Product/Goods/2752705',
-        'yearPublished' : 2007,
-        'timeLine': 'Before 1940',
-        'bookImage': 'http://image.yes24.com/momo/TopCate0001/kepub/L_262549.jpg',
-        'category' : 'History',
+        "title" : "Walking Tour of Korean Modern History 1",
+        "url" : "http://www.yes24.com/Product/Goods/2752705",
+        "yearPublished" : 2007,
+        "timeLine": "Before 1940",
+        "bookImage": "http://image.yes24.com/momo/TopCate0001/kepub/L_262549.jpg",
+        "category" : "History",
         
     },
     {

@@ -10,25 +10,50 @@ const renderItems = (collection) => {
 
 
 		// You can make each element inside of that…
-		const itemTitle = document.createElement('h2') // Make an `h2`
-		itemTitle.innerHTML = item.title // Put the JSON title inside
-		listItem.appendChild(itemTitle) // And add it to the `li`!
+		const itemName = document.createElement('name') // Make an `h2`
+		itemName.innerHTML = item.name // Put the JSON title inside
+		listItem.appendChild(itemName) // And add it to the `li`!
 
-		const itemImage = document.createElement('img') // And an image
-		itemImage.src = item.posterImage // Set the `src` attribute from the JSON
-		listItem.appendChild(itemImage) // And add that too
+		// You can make each element inside of that…
+		const itemPublishedYear = document.createElement('publishedyear') // Make an `h2`
+		itemPublishedYear.innerHTML = item.publishedYear // Put the JSON title inside
+		listItem.appendChild(itemPublishedYear) // And add it to the `li`!
+
+		const itemImg = document.createElement('img') // And an image
+		itemImg.src = item.img // Set the `src` attribute from the JSON
+		listItem.appendChild(itemImg) // And add that too
+
+	// Add a description under the list item
+	const itemDiscription = document.createElement('discription');
+	itemDiscription.innerHTML = item.discription; // Put the JSON description inside
+	listItem.appendChild(itemDiscription);
+
+	// Add a description under the list item
+	const itemPublisher = document.createElement('publisher');
+	itemPublisher.innerHTML = item.publisher; // Put the JSON description inside
+	listItem.appendChild(itemPublisher);
+
+   	// Add a description under the list item
+	const itemField = document.createElement('field');
+	itemField.innerHTML = item.field; // Put the JSON description inside
+	listItem.appendChild(itemField);
+
 
 
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
 			`
-				<p>Released in <time>${item.year}</time></p>
-				<p><em>${item.runTime}</em></p>
+
+			
+				<p></p>
 				<a href="${item.imdbLink}">
-					<p>${item.imdbRating} / 10 →</p>
+					<p>${item.period} </p>
 				</a>
+			
 			`
 		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
+
+
 
 		// You can build logic from your data, too
 		if (!item.alsoWriter) { // If this is `false`
@@ -42,9 +67,20 @@ const renderItems = (collection) => {
 
 
 // Fetch gets your JSON file…
-fetch('assets/collection.json')
+fetch('assets/data.json')
 	.then(response => response.json())
 	.then(collection => {
 		// And passes the data to the function, above!
 		renderItems(collection.reverse()) // In reverse order
 	})
+
+// div 엘리먼트 찾기
+const myDiv = document.getElementById('myDiv');
+
+// div를 클릭하면 페이지 스크롤 다운
+myDiv.addEventListener('click', () => {
+  window.scrollBy({
+    top: window.innerHeight, // 스크롤 다운할 거리
+    behavior: 'smooth' // 부드러운 스크롤 효과 적용
+  });
+});

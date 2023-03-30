@@ -5,32 +5,631 @@
 }
 
 
-
+ul {
+	position: absolute;
+	padding-top : 800px;
+}
 body {
-	font-family: sans-serif;
+	
+	height: 100%;
+	margin: 0; 
+	padding: 0;
+	font-family: 'Inter', sans-serif;
 	padding: var(--spacing);
 	padding-bottom: 33vh;
+
+
 }
+
+.category{
+	padding : 10px;
+	font-weight: 300;
+}
+
+.period {
+	position : absolute;
+	font-size: 10px;
+	left : 70%;
+	margin-left : -1300px;
+	
+}
+
+.period1 { 
+	position: relative;
+    left: 1577px;
+    width: 300px;
+    top: 328px;
+}
+
+.period2 { 
+	position: relative;
+	left: 1485px;
+    top: 529px;
+}
+
+.period3 { 
+	position: relative;
+	left: 1247px;
+	top: 459px;
+    z-index: 1;
+    color: white;
+}
+
+.period4 { 
+	position: relative;
+	left: 984px;
+    top: 192px;
+}
+
+.period5 { 
+	position: relative;
+	left: 689px;
+    top: 286px;
+}
+
+.period6  {
+	position: relative;
+    left: 359px;
+    top: 239px;
+    z-index: 4;
+}
+
+.period7 { 
+	position: relative;
+	left: 49px;
+    top: -42px;
+	z-index: 4;
+	
+}
+
+.period8 { 
+	position: relative;
+	left: 457px;
+    top: -168px;
+    z-index: 4;
+}
+
+.period9 { 
+	position: relative;
+	left: 587px;
+    top: -246px;
+}
+
+.circle {
+	box-sizing: border-box;
+	border-radius: 50%;
+	position: absolute;
+	width: 1074px;
+	height: 933px;
+	left: 243px;
+	top: -188px;
+	border: 19px solid #75874F;
+	left:0; right:0; margin-left:auto; margin-right:auto;
+
+}
+
+time {
+	font-size: 10px;
+}
+
+
+.rectangle {
+	position: absolute;
+	/*width: 1028px;
+	height: 301px;
+	left: 0px;
+	top: 602px;*/
+	background: #75874F;
+	z-index: 1;
+	width: 100%;
+	height: 200PX;
+	top : 702px;
+	left:0; right:0; margin-left:auto; margin-right:auto;
+}
+.pimg {
+	width: 100%;
+	left:70%
+	position : absolute;
+	display: block;
+	margin-top: 250px;
+	filter: grayscale(100%);
+	left:0; right:0; margin-left:auto; margin-right:auto;
+
+}
+.item:nth-child(1) {
+	position: absolute;
+	/*width: 388px;
+	height: 406px;
+	left: 1003px;
+	top: -97px;*/
+    width: 30%;
+    left: 65%;
+    MARGIN-TOP: -140PX;
+}
+.item:nth-child(2) {
+	position: absolute;
+	/*width: 291px;
+	height: 527.6px;
+	left: 976px;
+	top: 65px;*/
+	width: 30%;
+    left: 57%;
+    top: 10%;
+}
+.item:nth-child(3) {
+	position: absolute;
+	/*width: 328px;
+	height: 301px;
+	left: 786px;
+	top: 232px;*/
+	width: 30%;
+    left: 50%;
+    top: 170px;
+}
+.item:nth-child(4) {
+	position: absolute;
+	/*width: 250px;
+	height: 513.63px;
+	left: 609px;
+	top: 101px;*/
+	z-index: -1;
+	width: 25%;
+	left : 30%;
+
+}
+.item:nth-child(5) {
+	position: absolute;
+	/*width: 247px;
+	height: 543px;
+	left: 395px;
+	top: 109px;*/
+	width: 20%;
+	left : 18%;
+	top:109px;
+}
+.item:nth-child(6) {
+	position: absolute;
+	/*width: 385px;
+	height: 381px;
+	left: 140px;
+	top: 49px;*/
+	z-index: -1;
+	width: 20%;
+	left : 7%;
+	top:109px;
+}
+.item:nth-child(7) {
+	position: absolute;
+	/*width: 293px;
+	height: 219px;
+	left: 94px;
+	top: -54px;*/
+	z-index: -2;
+	width: 20%;
+	left : 2%;
+    top: -66px;
+}
+.item:nth-child(8) {
+    position: absolute;
+    /*width: 121px;
+    height: 162px;
+    left: 347px;
+    top: -139px*/
+    z-index: -3;
+	width: 7%;
+    left: 18%;
+    top: -182px;
+}
+.item:nth-child(9) {
+	position: absolute;
+	/*width: 81px;
+	height: 219px;
+	left: 492px;
+    top: -158px;*/
+    z-index: -2;
+    width: 5%;
+    left: 25%;
+    margin-top: -247px;
+}
+
+
+.samplebook{
+	width: 100vw;
+	position: absolute;
+	margin-left: -1050px;
+	left:70vw;
+	top: 240px;
+}
+
+#myDiv{
+	position: absolute;
+	LEFT: -10px;
+    top: -179px;
+}
+#myDiv2{
+    position: absolute;
+	LEFT: -53px;
+    top: -187px;
+}
+
+.sample1:nth-child(1){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+    left: 1173px;
+    top: 88px;
+    background: #75874F;
+
+
+}
+.sample1:nth-child(2){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+    left: 1173px;
+    top: 68px;
+    background: #75874F;
+}
+.sample2:nth-child(1){
+    position: absolute;
+	width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 193px;
+    background: #75874F;
+}
+.sample2:nth-child(2){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 213px;
+    background: #75874F;
+}
+.sample2:nth-child(3){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1115px;
+    top: 173px;
+    background: #75874F;
+}
+
+#myDiv3{
+    position: absolute;
+    LEFT: -251px;
+    top: -11px;
+}
+
+.sample3:nth-child(1){
+    position: absolute;
+	width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 193px;
+    background: #75874F;
+}
+.sample3:nth-child(2){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 213px;
+    background: #75874F;
+}
+.sample3:nth-child(3){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1115px;
+    top: 173px;
+    background: #75874F;
+}
+
+#myDiv4{
+    position: absolute;
+	LEFT: -537px;
+    top: -21px;
+}
+
+.sample4:nth-child(1){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+    left: 1173px;
+    top: 88px;
+    background: #75874F;
+
+
+}
+.sample4:nth-child(2){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+    left: 1173px;
+    top: 68px;
+    background: #75874F;
+}
+
+
+/*노무현*/
+
+#myDiv5{
+    position: absolute;
+    LEFT: -768px;
+    top: -70px;
+}
+
+.sample5:nth-child(1){
+    position: absolute;
+	width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 193px;
+    background: #75874F;
+}
+.sample5:nth-child(2){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 213px;
+    background: #75874F;
+}
+.sample5:nth-child(3){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 173px;
+    background: #75874F;
+}
+
+.sample5:nth-child(4){
+    position: absolute;
+	width: 50px;
+    height: 11px;
+	left: 1114px;
+top: 154px;
+    background: #75874F;
+}
+.sample5:nth-child(5){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+	top: 135px;
+    background: #75874F;
+}
+.sample5:nth-child(6){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+	top: 113px;
+    background: #75874F;
+}
+
+/*김대중*/
+
+#myDiv6{
+    position: absolute;
+    LEFT: -875px;
+    top: -105px;
+}
+
+.sample6:nth-child(1){
+    position: absolute;
+	width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 193px;
+    background: #75874F;
+}
+.sample6:nth-child(2){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 213px;
+    background: #75874F;
+}
+.sample6:nth-child(3){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 173px;
+    background: #75874F;
+}
+
+.sample6:nth-child(4){
+    position: absolute;
+	width: 50px;
+    height: 11px;
+	left: 1114px;
+top: 154px;
+    background: #75874F;
+}
+.sample6:nth-child(5){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+	top: 135px;
+    background: #75874F;
+}
+.sample6:nth-child(6){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+	top: 113px;
+    background: #75874F;
+}
+
+/*노채우*/
+
+#myDiv7{
+    position: absolute;
+	LEFT: -1000px;
+    top: -202px;
+}
+
+.sample7:nth-child(1){
+    position: absolute;
+	width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 193px;
+    background: #75874F;
+}
+.sample7:nth-child(2){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 213px;
+    background: #75874F;
+}
+.sample7:nth-child(3){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 1114px;
+    top: 173px;
+    background: #75874F;
+}
+
+.sample7:nth-child(4){
+    position: absolute;
+	width: 50px;
+    height: 11px;
+	left: 1114px;
+top: 154px;
+    background: #75874F;
+}
+
+/*  박근혜 */
+.sample:nth-child(6){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 882px;
+    top: 400px;
+    background: #75874F;
+}
+.sample:nth-child(7){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 882px;
+    top: 380px;
+    background: #75874F;
+}
+.sample:nth-child(8){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+	left: 882px;
+    top: 359px;
+    background: #75874F;
+}
+
+/*이명박*/
+.sample:nth-child(9){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+    left: 749px;
+    top: 290px;
+    background: #75874F;
+}
+.sample:nth-child(10){
+    position: absolute;
+    width: 50px;
+    height: 11px;
+    left: 749px;
+	top: 268px;
+    background: #75874F;
+}
+
+
 
 aside { margin-bottom: calc(4 * var(--spacing)); }
 
-h1 { font-size: 200%; }
+.name1 { 
+	position : absolute;
+	writing-mode: vertical-rl;
+	font-size: 200%; 
+color:	#75874F;}
 
-h2 { font-weight: bold; }
+.name2 { 
+	
+	position : absolute;
+	font-size: 200%; 
+	text-align: right;
+	color:	#75874F;}
 
-a { color: blue; }
 
-em { font-style: italic }
+name { 
+	font-weight: bold;
+font-size: 12px;
+}
+
+publishedyear { 
+	font-size: 9px; 
+}
+
+discription {  
+	font-size: 12px; 
+	background-color: #0000001e;
+padding:7px; 
+border:3px solid #ffffff;
+border-radius: %;
+}
+
+publisher {
+	font-size: 6px;
+}
+ field {
+
+ }
+
+
+
+a { color: #000000; }
+
+em { font-size : 11px; 
+	line-height: auto;}
 
 ul {
 	display: grid;
-	gap: calc(4 * var(--spacing));
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	
+	gap: calc(3 * var(--spacing));
 	margin-top: calc(4 * var(--spacing));
 }
 
 li {
 	display: grid;
+	text-align: center;
 	gap: var(--spacing);
+	width : 200px;
+	
 }
 
-.faded { opacity: 0.333 }
+
+
+	li:nth-child(3) {  grid-column: 1 / span 1;	}
+	li:nth-child(6) { grid-column: 1 / span 1;}
+	li:nth-child(9) { grid-column: 1 / span 1;}
+	li:nth-child(11) { grid-column: 1 / span 1;}
+	li:nth-child(16) { grid-column: 1 / span 1;}
+	li:nth-child(21) { grid-column: 1 / span 1;}
+	li:nth-child(21) { grid-column: 1 / span 1;}
+	li:nth-child(29) { grid-column: 1 / span 1;}
+	li:nth-child(45) { grid-column: 1 / span 1;}
+
+
+
