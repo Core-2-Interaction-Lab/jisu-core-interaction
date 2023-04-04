@@ -56,7 +56,7 @@ const renderItems = (collection) => {
 		const itemDetails =
 			`
 
-			<h2>$
+
 				
 					<p>${item.period} </p>
 					<p>${item.publisher} </p>
