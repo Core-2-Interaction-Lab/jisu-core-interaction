@@ -44,6 +44,7 @@
 .item {
   text-align: center;
   animation : spinType 1s infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes spinType {
@@ -51,7 +52,8 @@
     transform: rotate(0.5turn);
   }
   60% {
-    transform: rotate(0.7turn);
+    transform: rotate(0.7turn)
+    transform : translate(50%,25%);
   }
   100% {
     transform: rotate(1turn);

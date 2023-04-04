@@ -4,7 +4,6 @@
 	--spacing: 1em;
 }
 
-
 ul {
 	position: absolute;
 	padding-top : 800px;
@@ -33,6 +32,7 @@ body {
 	margin-left : -1300px;
 	
 }
+
 
 .period1 { 
 	position: relative;
@@ -122,10 +122,59 @@ time {
 	background: #75874F;
 	z-index: 1;
 	width: 100%;
-	height: 200PX;
+	height: 100PX;
 	top : 702px;
 	left:0; right:0; margin-left:auto; margin-right:auto;
 }
+
+
+navi{
+	list-style-type: noen;
+	display: flex;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #75874f;
+}
+navi ul{
+	list-style-type:none;
+	margin: 0;
+    padding: 0;
+}
+
+navi > li{
+	float: left;
+	width:100%
+}
+
+navi > li > a{
+	padding: 10px 50px;
+}
+
+navi li a{
+	background-color: #75874f;;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    text-align: center;
+    padding: 20%;
+	transition: all 0.5s;
+}
+
+navi li a:hover{
+	background-color:#596a35;;
+	color: white;
+}
+
+navi li ul{	/* << li 하위의 ul = 서브메뉴 */
+	display: none;
+}
+
+navi li:hover ul{
+	display: block;
+}
+
 .pimg {
 	width: 100%;
 	left:70%
@@ -239,17 +288,16 @@ time {
 	margin-left: -1050px;
 	left:70vw;
 	top: 240px;
+	width: 50px;
+    height: 20px;
+	font-size: 9px;
+	text-align: center;
 }
 
 #myDiv{
 	position: absolute;
 	LEFT: -10px;
     top: -179px;
-}
-#myDiv2{
-    position: absolute;
-	LEFT: -53px;
-    top: -187px;
 }
 
 .sample1:nth-child(1){
@@ -259,8 +307,6 @@ time {
     left: 1173px;
     top: 88px;
     background: #75874F;
-
-
 }
 .sample1:nth-child(2){
     position: absolute;
@@ -269,6 +315,11 @@ time {
     left: 1173px;
     top: 68px;
     background: #75874F;
+}
+#myDiv2{
+    position: absolute;
+	LEFT: -53px;
+    top: -187px;
 }
 .sample2:nth-child(1){
     position: absolute;
@@ -582,8 +633,8 @@ publishedyear {
 }
 
 discription {  
-	font-size: 12px; 
-	background-color: #0000001e;
+font-size: 12px; 
+background-color: #0000001e;
 padding:7px; 
 border:3px solid #ffffff;
 border-radius: %;
@@ -595,6 +646,46 @@ publisher {
  field {
 
  }
+
+
+.yoon{
+	color:rgb(255, 0, 0);
+}
+.moon{
+	color:#1100ff;
+}
+.park{
+	color:#ff0000;
+}
+.lee{
+	color:#ff0000;
+}
+.participatory{
+	color:#519348;
+}
+.national{
+	color:#0e7400;
+}
+.roh{
+	color:#75874F;
+}
+.Contemporary {
+	color: blue;
+}
+.Modern {
+	color:pink;
+}
+
+.lightbox {
+	display :none;
+	position : absolute;
+	left : 50%;
+	top : 50%;
+	transform : translate(-50%, -50%);
+	background-color: #c88989;
+	border-radius: 30px;
+	overflow: hidden;
+}
 
 
 
@@ -609,6 +700,7 @@ ul {
 	
 	gap: calc(3 * var(--spacing));
 	margin-top: calc(4 * var(--spacing));
+	
 }
 
 li {

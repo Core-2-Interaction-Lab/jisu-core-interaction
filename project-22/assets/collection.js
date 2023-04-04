@@ -38,21 +38,44 @@ const renderItems = (collection) => {
 	itemField.innerHTML = item.field; // Put the JSON description inside
 	listItem.appendChild(itemField);
 
+// Function to render your items
+const renderItems = (collection) => {
+	// The `ul` where the items will be inserted
+	const collectionList = document.getElementById('collection');
+
+	// Loop through each item in the collection array
+	collection.forEach(item => {
+		const listItem = document.createElement('li') // Make the `li`
+
+		// add an ID to the list item for unique styling
+		listItem.id = item.id;
+
 
 
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
 			`
 
-			
-				<p></p>
-				<a href="${item.imdbLink}">
+			<h2>$
+				
 					<p>${item.period} </p>
-				</a>
-			
+					<p>${item.publisher} </p>
+	
+					<div class="lightbox">
+						<p>${item.discription}</p>
+					</div>
+		
+				
+					</li>
 			`
 		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
 
+		collectionList.appendChild(listItem) // Then add the whole `li` into the `ul`
+	})
+
+	// now that all html is in the page, we can fire a function which taps into the list items
+	createLightboxes(collectionList.querySelectorAll('li'))
+}
 
 
 		// You can build logic from your data, too
@@ -63,6 +86,7 @@ const renderItems = (collection) => {
 		collectionList.appendChild(listItem) // Then add the whole `li` into the `ul`
 	})
 }
+
 
 
 
@@ -84,3 +108,11 @@ myDiv.addEventListener('click', () => {
     behavior: 'smooth' // 부드러운 스크롤 효과 적용
   });
 });
+
+const createLightboxes = listItems => {
+	listItems.forEach(item => {
+		item.addEventListener('click', () => {
+			item.classList.toggle('lightbox-enabled')
+		})
+	})
+}
