@@ -1,3 +1,9 @@
+// hijack the wheel event (i.e. scroll attempts) to move along the x-axis
+window.addEventListener('wheel', e => {
+	document.body.scrollBy(e.deltaY / 3, 0);
+})
+
+
 // Function to render your items
 const renderItems = (collection) => {
 	// The `ul` where the items will be inserted
@@ -7,6 +13,9 @@ const renderItems = (collection) => {
 	// Loop through each item in the collection array
 	collection.forEach(item => {
 		const listItem = document.createElement('li') // Make the `li`
+
+// add an ID to the list item for unique styling
+listItem.id = item.id;
 
 
 		// You can make each element inside of that…
@@ -47,8 +56,9 @@ const renderItems = (collection) => {
 	collection.forEach(item => {
 		const listItem = document.createElement('li') // Make the `li`
 
-		// add an ID to the list item for unique styling
-		listItem.id = item.id;
+
+
+
 
 
 
@@ -56,15 +66,16 @@ const renderItems = (collection) => {
 		const itemDetails =
 			`
 
-
+					<li>
 				
 					<p>${item.period} </p>
 					<p>${item.publisher} </p>
-	
-					<div class="lightbox">
+					<div class="image-wrapper">
+					<img src="${item.img}" alt="View of ${item.title}">
+						<div class="lightbox">
 						<p>${item.discription}</p>
 					</div>
-		
+		</div>
 				
 					</li>
 			`
@@ -91,7 +102,7 @@ const renderItems = (collection) => {
 
 
 // Fetch gets your JSON file…
-fetch('assets/data.json')
+fetch('assets/collection.json')
 	.then(response => response.json())
 	.then(collection => {
 		// And passes the data to the function, above!
