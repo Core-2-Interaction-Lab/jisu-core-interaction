@@ -4,10 +4,7 @@
 	--spacing: 1em;
 }
 
-ul {
-	position: absolute;
-	padding-top : 800px;
-}
+
 body {
 	
 	height: 100%;
@@ -126,7 +123,10 @@ time {
 	height: 100PX;
 	top : 702px;
 	left:0; right:0; margin-left:auto; margin-right:auto;
+	justify-content: space-evenly;
+    align-items: center;
 }
+
 
 .rectangle2 {
 	position: absolute;
@@ -140,7 +140,24 @@ time {
 	height: 1500%;
 	top : 702px;
 	left:0; right:0; margin-left:auto; margin-right:auto;
-}
+} 
+
+
+
+.button {
+	background-color: #ffffff;
+	border: none;
+	color: #75874F;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	
+  }
+
 
 navi{
 	list-style-type: noen;
@@ -640,7 +657,7 @@ color:	#75874F;}
 
 name { 
 	font-weight: bold;
-font-size: 12px;
+font-size: 20px;
 }
 
 publishedyear { 
@@ -649,10 +666,9 @@ publishedyear {
 
 discription {  
 font-size: 12px; 
-background-color: #0000001e;
-padding:7px; 
-border:3px solid #ffffff;
-border-radius: %;
+
+padding:px; 
+
 }
 
 publisher {
@@ -741,14 +757,25 @@ ul {
 	
 	gap: calc(3 * var(--spacing));
 	margin-top: calc(4 * var(--spacing));
+	padding-top : 600px;
+	margin-right: 30px;
+	
+}
+
+ul {
+	position: absolute;
 	
 }
 
 li {
-	display: grid;
-	text-align: center;
-	gap: var(--spacing);
-	width : 200px;
+    display: flex;
+
+    gap: var(--spacing);
+    width: ;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
 	
 }
 

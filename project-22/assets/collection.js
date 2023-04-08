@@ -18,6 +18,10 @@ const renderItems = (collection) => {
 listItem.id = item.id;
 
 
+const itemImg = document.createElement('img') // And an image
+itemImg.src = item.img // Set the `src` attribute from the JSON
+listItem.appendChild(itemImg) // And add that too
+
 		// You can make each element inside of that…
 		const itemName = document.createElement('name') // Make an `h2`
 		itemName.innerHTML = item.name // Put the JSON title inside
@@ -28,24 +32,24 @@ listItem.id = item.id;
 		itemPublishedYear.innerHTML = item.publishedYear // Put the JSON title inside
 		listItem.appendChild(itemPublishedYear) // And add it to the `li`!
 
-		const itemImg = document.createElement('img') // And an image
-		itemImg.src = item.img // Set the `src` attribute from the JSON
-		listItem.appendChild(itemImg) // And add that too
+
 
 	// Add a description under the list item
 	const itemDiscription = document.createElement('discription');
 	itemDiscription.innerHTML = item.discription; // Put the JSON description inside
 	listItem.appendChild(itemDiscription);
 
+	   	// Add a description under the list item
+		   const itemField = document.createElement('field');
+		   itemField.innerHTML = item.field; // Put the JSON description inside
+		   listItem.appendChild(itemField);
+
 	// Add a description under the list item
 	const itemPublisher = document.createElement('publisher');
 	itemPublisher.innerHTML = item.publisher; // Put the JSON description inside
 	listItem.appendChild(itemPublisher);
 
-   	// Add a description under the list item
-	const itemField = document.createElement('field');
-	itemField.innerHTML = item.field; // Put the JSON description inside
-	listItem.appendChild(itemField);
+
 
 // Function to render your items
 const renderItems = (collection) => {
@@ -67,7 +71,8 @@ const renderItems = (collection) => {
 			`
 
 					<li>
-				
+					
+					<h2>${item.name} </h2>
 					<p>${item.period} </p>
 					<p>${item.publisher} </p>
 					<div class="image-wrapper">
@@ -83,16 +88,16 @@ const renderItems = (collection) => {
 
 		collectionList.appendChild(listItem) // Then add the whole `li` into the `ul`
 	})
+	
+
+
 
 	// now that all html is in the page, we can fire a function which taps into the list items
 	createLightboxes(collectionList.querySelectorAll('li'))
 }
 
 
-		// You can build logic from your data, too
-		if (!item.alsoWriter) { // If this is `false`
-			listItem.classList.add('faded') // Add this class to the whole `li`
-		}
+
 
 		collectionList.appendChild(listItem) // Then add the whole `li` into the `ul`
 	})
