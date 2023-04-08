@@ -125,6 +125,10 @@ time {
 	left:0; right:0; margin-left:auto; margin-right:auto;
 	justify-content: space-evenly;
     align-items: center;
+	
+
+
+flex-wrap: wrap
 }
 
 
@@ -637,13 +641,21 @@ top: 154px;
     background: #75874F;
 }
 
-
+.intro {
+	position: absolute;
+	font-family: 'Inter', sans-serif;
+padding : 30px;
+	flex-basis: 100%;
+	font-weight: 100;
+	
+}
 
 aside { margin-bottom: calc(4 * var(--spacing)); }
 
 .name1 { 
 	position : absolute;
 	writing-mode: vertical-rl;
+	font-weight: 700;
 	font-size: 200%; 
 color:	#75874F;}
 
