@@ -701,8 +701,10 @@ publisher {
  }
 
 
+
+
 .yoon{
-	color:rgb(255, 0, 0);
+	color:rgb(121, 0, 0);
 }
 .moon{
 	color:#1100ff;
@@ -840,5 +842,9 @@ display: none;
 
 		.samplebook {
 			display: none;
+			}
+
+			.button {
+				display: none;
 			}
 	}

@@ -2,7 +2,8 @@
 window.addEventListener('wheel', e => {
 	document.body.scrollBy(e.deltaY / 3, 0);
 })
-
+const listItem = document.createElement('li');
+listItem.classList.add('yoon'); // .yoon 클래스 추가
 
 // Function to render your items
 const renderItems = (collection) => {
