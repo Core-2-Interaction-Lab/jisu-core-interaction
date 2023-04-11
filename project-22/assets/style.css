@@ -14,7 +14,7 @@ body {
 	font-weight: 300;
 	padding: var(--spacing);
 	padding-bottom: 33vh;
-
+background-color: #75874F;
 
 }
 
@@ -810,3 +810,23 @@ li {
 
 
 
+	@media (max-width: 700px) {
+		ul {
+			grid-template-columns: 1fr;
+			
+		}
+.samplebook {
+display: none;
+}
+		.whole {
+			display: none;
+		}
+
+		li {
+			flex-direction: inherit;
+		}
+		img {
+		
+			max-width: 200px;
+		}
+	}
