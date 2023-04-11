@@ -32,7 +32,10 @@ listItem.appendChild(itemImg) // And add that too
 		itemPublishedYear.innerHTML = item.publishedYear // Put the JSON title inside
 		listItem.appendChild(itemPublishedYear) // And add it to the `li`!
 
-
+		// You can make each element inside of that…
+		const itemPeriod = document.createElement('period') // Make an `h2`
+		itemPeriod.innerHTML = item.period // Put the JSON title inside
+		listItem.appendChild(itemPeriod) // And add it to the `li`!
 
 	// Add a description under the list item
 	const itemDiscription = document.createElement('discription');
@@ -125,10 +128,35 @@ myDiv.addEventListener('click', () => {
   });
 });
 
-const createLightboxes = listItems => {
-	listItems.forEach(item => {
-		item.addEventListener('click', () => {
-			item.classList.toggle('lightbox-enabled')
-		})
-	})
-}
+myDiv4.addEventListener('click', () => {
+	window.scrollBy({
+	  top: 3300, // 30px 스크롤 다운할 거리
+	  behavior: 'smooth' // 부드러운 스크롤 효과 적용
+	});
+  });
+
+
+myDiv3.addEventListener('click', () => {
+	window.scrollBy({
+	  top: 2300, // 30px 스크롤 다운할 거리
+	  behavior: 'smooth' // 부드러운 스크롤 효과 적용
+	});
+  });
+
+
+
+myDiv2.addEventListener('click', () => {
+	window.scrollBy({
+	  top: 1400, // 30px 스크롤 다운할 거리
+	  behavior: 'smooth' // 부드러운 스크롤 효과 적용
+	});
+  });
+
+
+  myDiv.addEventListener('click', () => {
+	window.scrollBy({
+	  top: 1000, // 30px 스크롤 다운할 거리
+	  behavior: 'smooth' // 부드러운 스크롤 효과 적용
+	});
+  });
+

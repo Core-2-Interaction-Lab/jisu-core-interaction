@@ -333,8 +333,11 @@ navi li:hover ul{
 
 #myDiv{
 	position: absolute;
-	LEFT: -10px;
-    top: -179px;
+    LEFT: -50px;
+    top: -176px;
+
+
+
 }
 
 .sample1:nth-child(1){
@@ -344,6 +347,7 @@ navi li:hover ul{
     left: 1173px;
     top: 88px;
     background: #75874F;
+
 }
 .sample1:nth-child(2){
     position: absolute;
@@ -352,11 +356,12 @@ navi li:hover ul{
     left: 1173px;
     top: 68px;
     background: #75874F;
+
 }
 #myDiv2{
     position: absolute;
-	LEFT: -53px;
-    top: -187px;
+	left: -80px;
+    top: -161px;
 }
 .sample2:nth-child(1){
     position: absolute;
@@ -385,8 +390,8 @@ navi li:hover ul{
 
 #myDiv3{
     position: absolute;
-    LEFT: -251px;
-    top: -11px;
+	LEFT: -251px;
+    top: 17px;
 }
 
 .sample3:nth-child(1){
@@ -416,7 +421,7 @@ navi li:hover ul{
 
 #myDiv4{
     position: absolute;
-	LEFT: -537px;
+    LEFT: -495px;
     top: -21px;
 }
 
@@ -444,7 +449,7 @@ navi li:hover ul{
 
 #myDiv5{
     position: absolute;
-    LEFT: -768px;
+	LEFT: -687px;
     top: -70px;
 }
 
@@ -502,8 +507,8 @@ top: 154px;
 
 #myDiv6{
     position: absolute;
-    LEFT: -875px;
-    top: -105px;
+	LEFT: -798px;
+    top: -127px;
 }
 
 .sample6:nth-child(1){
@@ -560,8 +565,8 @@ top: 154px;
 
 #myDiv7{
     position: absolute;
-	LEFT: -1000px;
-    top: -202px;
+    LEFT: -881px;
+    top: -278px;
 }
 
 .sample7:nth-child(1){
@@ -774,7 +779,7 @@ ul {
 	
 	gap: calc(3 * var(--spacing));
 	margin-top: calc(4 * var(--spacing));
-	padding-top : 600px;
+
 	margin-right: 30px;
 	
 }
@@ -829,4 +834,11 @@ display: none;
 		
 			max-width: 200px;
 		}
+	}
+
+	@media (max-width: 1150px) {
+
+		.samplebook {
+			display: none;
+			}
 	}
