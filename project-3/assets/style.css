@@ -1,0 +1,53 @@
+ul{
+    list-style:none;
+    }
+
+    /* Just to make the demo easier to work with. */
+
+:root {
+	--spacing: 1em;
+}
+
+
+.paper
+{
+
+}
+body {
+
+    margin-top: 73px;
+	font-family: sans-serif;
+	padding: var(--spacing);
+	padding-bottom: 33vh;
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.slide {
+	display : flex;
+	align-items: center;
+    justify-content: center;
+}
+
+aside { margin-bottom: calc(4 * var(--spacing)); }
+
+h1 { }
+
+h2 {  }
+
+a {  }
+
+em { font-style: italic }
+
+ul {
+	display: grid;
+	gap: calc(4 * var(--spacing));
+	margin-top: calc(4 * var(--spacing));
+}
+
+li {
+	display: grid;
+	gap: var(--spacing);
+}
+
+.faded { opacity: 0.333 }

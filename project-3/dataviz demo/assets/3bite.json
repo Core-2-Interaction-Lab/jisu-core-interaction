@@ -1,0 +1,37 @@
+  {
+    "itmes":[
+    {
+    "uniqueid": 1003,
+    "dateofbite": "May 11 2016",
+    "species": "DOG",
+    "breed": "Pit Bull",
+    "age": "",
+    "gender": "U",
+    "spayneuter": "FALSE",
+    "borough": "Brooklyn",
+    "zipcode": 11212
+  },
+  {
+    "uniqueid": 1016,
+    "dateofbite": "May 11 2016",
+    "species": "DOG",
+    "breed": "Pit Bull",
+    "age": "",
+    "gender": "U",
+    "spayneuter": "FALSE",
+    "borough": "Brooklyn",
+    "zipcode": 11212
+  },
+  {
+    "uniqueid": 5137,
+    "dateofbite": "May 11 2016",
+    "species": "DOG",
+    "breed": "Chihuahua Crossbreed",
+    "age": 2,
+    "gender": "M",
+    "spayneuter": "TRUE",
+    "borough": "Manhattan",
+    "zipcode": 10025
+  }
+]
+  }
