@@ -167,7 +167,7 @@ section {
 .grid-item {
     position: relative;
     padding-top: 100%;
-    background-color: peachpuff;
+    background-color: rgb(60, 174, 34);
     border-radius: 20%;
 }
 
@@ -186,7 +186,7 @@ section {
     justify-content: center;
     align-items: center;
     font-size: 400%;
-    color: tomato;
+    color: rgb(0, 0, 0);
 }
 
 .label {
@@ -198,12 +198,12 @@ section {
     justify-content: center;
     align-items: center;
     font-size: 1em;
-    color: tomato;
+    color: rgb(0, 0, 0);
 }
 
 .alert {
-    color: rgb(186, 152, 152);
-    background-color: rgb(252, 236, 236);
+    color: rgb(0, 0, 0);
+    background-color: rgb(126, 208, 151);
 }
 
 .chart-container {
