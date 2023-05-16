@@ -11,16 +11,11 @@ const renderItems = (collection) => {
 
 		// You can make each element inside of that…
 		const itemTitle = document.createElement('h2') // Make an `h2`
-		itemTitle.innerHTML = item.Title // Put the JSON title inside
+		itemTitle.innerHTML = item.title // Put the JSON title inside
 		listItem.appendChild(itemTitle) // And add it to the `li`!
 
-				// You can make each element inside of that…
-				const itemAddedby = document.createElement('h2') // Make an `h2`
-				itemAddedby.innerHTML = item.Addedby// Put the JSON title inside
-				listItem.appendChild(itemAddedby) // And add it to the `li`!
-
 		const itemImage = document.createElement('img') // And an image
-		itemImage.src = item.Image // Set the `src` attribute from the JSON
+		itemImage.src = item.posterImage // Set the `src` attribute from the JSON
 		listItem.appendChild(itemImage) // And add that too
 
 
@@ -35,7 +30,10 @@ const renderItems = (collection) => {
 			`
 		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
 
-
+		// You can build logic from your data, too
+		if (!item.alsoWriter) { // If this is `false`
+			listItem.classList.add('faded') // Add this class to the whole `li`
+		}
 
 		collectionList.appendChild(listItem) // Then add the whole `li` into the `ul`
 	})
@@ -44,11 +42,9 @@ const renderItems = (collection) => {
 
 
 // Fetch gets your JSON file…
-fetch('collection.json')
+fetch('assets/collection.json')
 	.then(response => response.json())
 	.then(collection => {
 		// And passes the data to the function, above!
 		renderItems(collection.reverse()) // In reverse order
 	})
-
-

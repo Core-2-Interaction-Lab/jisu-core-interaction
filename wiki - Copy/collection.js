@@ -50,5 +50,3 @@ fetch('collection.json')
 		// And passes the data to the function, above!
 		renderItems(collection.reverse()) // In reverse order
 	})
-
-
