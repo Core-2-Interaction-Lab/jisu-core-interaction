@@ -1,3 +1,5 @@
+<html>
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +17,7 @@
 
 <body>
 
-    <div class="circle"> <i><p class="title">How to Use Jisu's HOME</p></i></div>
+   <div class="title"> <img src="img/TITLE.svg" width="900"> </div>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <h1>🧺 Laundry Room </h1>
 There are two ways to do laundry:
@@ -45,8 +47,8 @@ Password: 147w14th
 <br><Br>
 However, when making a copy, an authentication code will be sent to my email, so we need to be able to communicate for the duplication to be possible.
 <br>
-<img src="img/K1.jpg">
-<img src="img/K2.jpg">
+<div class="photo"><img src="img/K1.jpg">
+<img src="img/K2.jpg"></div>
 <br><Br>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12091.963335304095!2d-74.01170821841956!3d40.74022721361556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590626929e55%3A0x26f253955979fcd5!2sKeyMe%20Locksmiths!5e0!3m2!1sko!2sus!4v1684967724903!5m2!1sko!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -58,26 +60,26 @@ Turn the doorknob to the right until it opens.
 Then, when leaving, turn the doorknob to the left. It should come out until the door locks automatically.
 If your hands are slippery from lotion, it may be difficult to open the door. In that case, folding a tissue and using it to grip the doorknob will make it easier to open.
 <br>
+<div class="photo">
 <img src="img/c1.jpg">
-<img src="img/c2.jpg" >
+<img src="img/c2.jpg" ></div>
 
 
 <h2>How to lock the door:</h2>
 The door locks automatically.
 <br>
-<img src="img/d1.jpg">
-<img src="img/d2.jpg" >
+<div class="photo"><img src="img/d1.jpg"> <img src="img/d2.jpg" ></div>
 
 <h2>How to open the mailbox:</h2>
 Turn the key to the left.
 <br>
-<img src="img/M.jpg">
+<div class="photo"><img src="img/M.jpg"></div>
 
 <h2>When someone calls:</h2>
 Press the right person-shaped button to have a conversation.
 Press the left key button to open the door to the first floor.
 <br>
-<img src="img/S.jpg">
+<div class="photo"><img src="img/S.jpg"></div>
 <br>
 <br>
 <hr style="border: solid 0.1px black; ">
@@ -86,7 +88,7 @@ Press the left key button to open the door to the first floor.
 You can throw it away on the first floor.
 If it's something like a cardboard box, you can place it on top here.
 <br>
-<img src="img/g.jpg" >
+<div class="photo"><img src="img/g.jpg" ></div>
 
 <h2>How to open the window:</h2>
 Turn it to the left to open and to the right to lock. Lower the upper window to open it.
@@ -96,17 +98,22 @@ Also, I cleared out the right storage cabinet for you. You can put your belongin
 
 <style>
 
-    img {
-    
-        width:20%;
-        padding : 30px;
-
+.photo {
+        width: 800px;
+        padding: 30px;
+        overflow: hidden;
     }
+    
+    .photo img {
+        max-width: 30%;
+        height: auto;
+    }
+
+
     .title{
-        font-family: 'Playfair Display', italic;
-font-weight: 500;
-font-size: 80px;
-color: #db0000;
+width:300px;
+position: relative;
+
     }
 
 
@@ -114,7 +121,7 @@ color: #db0000;
     .circle{
         position: absolute;
         width: 100%;
-    height: 214px;
+    height: 20%;
 top : 30px;
 left : 30px;
 border-radius: 50%;
@@ -124,10 +131,15 @@ text-align: center;
 line-height: 50px;
 
     }
-    body{
+   html, body{
+
+        height: 100%;
+
         
         font-family: 'Inter', sans-serif;
         padding : 30px;
+        
+       color: #db0000;
 
      
     }
@@ -142,3 +154,6 @@ color: #db0000;
 }
  
 </style>
+
+
+</html>
