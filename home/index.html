@@ -15,8 +15,10 @@
   </head>
 
   <body>
-    <div class="title"><img src="img/TITLE.svg" width="900" /></div>
-
+    <div class="title">
+      <img src="img/TITLE.svg" width="700" />
+    </div>
+    <br /><br /><br /><br /><br /><br />
     <div class="container">
       <div class="main-side">
         147 West 14th, New York, 10011<br />
@@ -49,6 +51,19 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        <div class="photo">
+          <img src="img/luan1.jpg" /> <br />
+          This place is about 2.5 blocks away from the laundromat. It's a new
+          place and clean. I'll use the laundromat card for payment.<br />
+          <img src="img/luan3.jpg" /><img src="img/luan2.jpg" />
+          <br />
+          The laundromat is located in the basement of the apartment management
+          building, about 1.5 blocks away from here. I recommend using the
+          laundromat above this place because I think there's a risk of getting
+          caught by the doorman. Haha (Subletting is prohibited.) Take the
+          elevator and go down to the basement. It's in the left room in the
+          corridor shown in the picture.
+        </div>
         <br />
         <br />
         <hr style="border: solid 0.1px rgb(205, 0, 0)" />
@@ -106,7 +121,8 @@
         <div class="photo">
           <img src="img/d1.jpg" /> <img src="img/d2.jpg" />
         </div>
-
+        <div class="photo2"><img src="img/door.gif" /></div>
+        <div class="photo2"><img src="img/key.gif" /></div>
         <h2>How to open the mailbox:</h2>
         Turn the key to the left.
         <br />
@@ -131,10 +147,14 @@
         Turn it to the left to open and to the right to lock. Lower the upper
         window to open it. Also, I cleared out the right storage cabinet for
         you. You can put your belongings in here!
+        <br />
+        <div class="photo2"><img src="img/blind.gif" /></div>
+        <div class="photo2"><img src="img/wopen.gif" /></div>
+        <div class="photo2"><img src="img/wlock.gif" /></div>
       </div>
     </div>
 
-    <div class="footer">MADE BY JISU</div>
+    <div class="footer">MAY 2023</div>
   </body>
 
   <style>
@@ -156,24 +176,21 @@
       max-width: 30%;
       height: auto;
     }
+    .photo2 {
+      width: 800px;
+      padding: 30px;
+      overflow: hidden;
+    }
+    .photo2 gif {
+      max-width: 60%;
+    }
 
     .title {
       width: 300px;
       position: relative;
+      padding-left: 100px;
     }
 
-    .circle {
-      position: absolute;
-      width: 100%;
-      height: 20%;
-      top: 30px;
-      left: 30px;
-      border-radius: 50%;
-      background: #ffd600;
-      z-index: -1;
-      text-align: center;
-      line-height: 50px;
-    }
     html,
     body {
       height: 100%;
